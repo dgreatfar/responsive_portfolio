@@ -64,7 +64,29 @@ body{
     border-radius: 10px;
 }
 
-@media(max-width: 800px){
+.about .about-content{
+    display: flex;
+    justify-content: center;
+}
+.about .card{
+    height: 300px;
+    width: 300px;
+    margin: 50px;
+    box-shadow: 5px 2px 5px 2px #555;
+    background-color: #222;
+    border-radius: 5px;
+  }
+
+
+/* Responsive styles */
+@media(max-width: 900px){
+    .about .card {
+        width: 300px;
+        margin: 20px;
+    }
+}
+
+@media(max-width: 700px){
     .toggle-button {
         display: flex;
     }
@@ -72,8 +94,8 @@ body{
     .navbar-links{
         display: none;
         width: 100%;
-
     }
+
     .navbar{
         flex-direction: column;
         align-items:flex-start;
@@ -94,4 +116,14 @@ body{
     .navbar-links.active{
         display: flex;
     }
+
+    .about .about-content{
+        flex-direction: column;
+       
+    }
+    .about .card {
+        width: auto;
+        margin: 20px 50px;
+    }
+ 
 }
